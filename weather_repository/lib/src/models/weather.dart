@@ -12,14 +12,14 @@ enum WeatherCondition {
 }
 
 @JsonSerializable()
-class Weather extends Equatable {
-  const Weather({
+class WeatherRepo extends Equatable {
+  const WeatherRepo({
     required this.location,
     required this.temperature,
     required this.condition,
   });
 
-  factory Weather.fromJson(Map<String, dynamic> json) =>
+  factory WeatherRepo.fromJson(Map<String, dynamic> json) =>
       _$WeatherFromJson(json);
 
   Map<String, dynamic> toJson() => _$WeatherToJson(this);

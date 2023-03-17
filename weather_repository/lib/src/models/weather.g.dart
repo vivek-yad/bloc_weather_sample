@@ -6,13 +6,13 @@ part of 'weather.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Weather _$WeatherFromJson(Map<String, dynamic> json) => Weather(
+WeatherRepo _$WeatherFromJson(Map<String, dynamic> json) => WeatherRepo(
       location: json['location'] as String,
       temperature: (json['temperature'] as num).toDouble(),
       condition: $enumDecode(_$WeatherConditionEnumMap, json['condition']),
     );
 
-Map<String, dynamic> _$WeatherToJson(Weather instance) => <String, dynamic>{
+Map<String, dynamic> _$WeatherToJson(WeatherRepo instance) => <String, dynamic>{
       'location': instance.location,
       'temperature': instance.temperature,
       'condition': _$WeatherConditionEnumMap[instance.condition]!,

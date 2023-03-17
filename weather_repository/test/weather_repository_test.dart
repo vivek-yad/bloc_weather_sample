@@ -108,7 +108,7 @@ void main() {
         final actual = await weatherRepository.getWeather(city);
         expect(
           actual,
-          Weather(
+          WeatherRepo(
             temperature: 42.42,
             location: city,
             condition: WeatherCondition.clear,
@@ -136,7 +136,7 @@ void main() {
         final actual = await weatherRepository.getWeather(city);
         expect(
           actual,
-          Weather(
+          WeatherRepo(
             temperature: 42.42,
             location: city,
             condition: WeatherCondition.cloudy,
@@ -164,7 +164,7 @@ void main() {
         final actual = await weatherRepository.getWeather(city);
         expect(
           actual,
-          Weather(
+          WeatherRepo(
             temperature: 42.42,
             location: city,
             condition: WeatherCondition.rainy,
@@ -192,7 +192,7 @@ void main() {
         final actual = await weatherRepository.getWeather(city);
         expect(
           actual,
-          Weather(
+          WeatherRepo(
             temperature: 42.42,
             location: city,
             condition: WeatherCondition.snowy,
@@ -220,7 +220,7 @@ void main() {
         final actual = await weatherRepository.getWeather(city);
         expect(
           actual,
-          Weather(
+          WeatherRepo(
             temperature: 42.42,
             location: city,
             condition: WeatherCondition.unknown,
